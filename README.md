@@ -13,3 +13,10 @@
     }
   }
 ```
+
+## Local development 
+- Install dependencies `npm install`
+- Run Azure Function(s) locally `npm run start`
+
+## Deploying Azure Function to production
+Contact [Tamimi](https://github.com/TamimiGitHub)
