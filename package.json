@@ -6,6 +6,10 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "@orbit-love/activities": "^0.2.0",
+    "@orbit-love/members": "^1.0.0",
+    "jsonschema": "^1.4.0"
+  },
   "devDependencies": {}
 }

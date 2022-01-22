@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string"
+    },
+    "fired_by_batch_action": {
+      "type": "boolean"
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "fired_at": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "username": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "creation_date": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "fired_at",
+        "user_id",
+        "username",
+        "email",
+        "creation_date",
+        "level",
+        "firstname",
+        "lastname"
+      ]
+    }
+  },
+  "required": [
+    "event",
+    "fired_by_batch_action",
+    "message_id",
+    "payload"
+  ]
+}
