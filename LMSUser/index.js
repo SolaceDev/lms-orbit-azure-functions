@@ -1,6 +1,6 @@
 module.exports = async function (context, req) {
   const Validator = require('jsonschema').Validator;
-  var schema = require("./schema.json")
+  var schema = require("./schema.json") // Note: this schema could be queried from EP using Solace Cloud API
   var schemaValidator = new Validator();
 
   // Access Orbit Token: process.env["ORBIT_TOKEN"]
@@ -32,7 +32,7 @@ module.exports = async function (context, req) {
     member: {
       name: body.payload.firstname + " " + body.payload.lastname,
       email: body.payload.email,
-      tags: ['Training']
+      tags_to_add: ['Training']
     }
   }
   // Create member
