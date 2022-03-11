@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string"
+    },
+    "fired_by_batch_action": {
+      "type": "boolean"
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "fired_at": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "course_id": {
+          "type": "integer"
+        },
+        "completion_date": {
+          "type": "string"
+        },
+        "subscribed_by_id": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string"
+        },
+        "enrollment_date": {
+          "type": "string"
+        },
+        "enrollment_date_begin_validity": {
+          "type": "null"
+        },
+        "enrollment_date_end_validity": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "fired_at",
+        "user_id",
+        "course_id",
+        "completion_date",
+        "subscribed_by_id",
+        "status",
+        "level",
+        "enrollment_date",
+        "enrollment_date_begin_validity",
+        "enrollment_date_end_validity"
+      ]
+    }
+  },
+  "required": [
+    "event",
+    "fired_by_batch_action",
+    "message_id",
+    "payload"
+  ]
+}

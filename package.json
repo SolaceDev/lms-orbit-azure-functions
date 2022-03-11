@@ -7,9 +7,12 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "@azure/identity": "^2.0.4",
+    "@azure/keyvault-secrets": "^4.3.0",
     "@orbit-love/activities": "^0.2.0",
     "@orbit-love/members": "^1.0.0",
-    "jsonschema": "^1.4.0"
+    "jsonschema": "^1.4.0",
+    "qs": "^6.10.3"
   },
   "devDependencies": {}
 }
