@@ -15,6 +15,7 @@
 ```
 
 ## Local development 
+- Install the Azure Function tools globally `npm install -g azure-functions-core-tools`
 - Install dependencies `npm install`
 - Run Azure Function(s) locally `npm run start`
 
